@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_style.css">
+    <script src="login_script.js"></script>
     <title>Login</title>
 </head>
 <body>
-    <h1>Welcome to the Login Page</h1>
-    <form action="/login" method="POST">
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username" required>
-        <br>
+    <h1>Welcome to the MoveMate Solutions</h1>
+    <div class="wrapper">
+        <div class="title">Login</div>
 
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" required>
-        <br>
+    <form id="loginForm" onsubmit="handleSubmit(event)">
+        <div class="field">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required>
+            <br>
+        </div>
+        <div class="field">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required>
+            <br>
+        </div>
+        <div class="field">
+            <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">
+            Not a member? <a href="signup.html">Sign Up Now</a>
+        </div>
 
-        <input type="submit" value="Login">
+    </div>
     </form>
 </body>
 </html>
